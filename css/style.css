@@ -1,0 +1,32 @@
+/* Universal selector */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* The borders and the paddings are no longer added to the total width or total height that we specify for the box */
+    box-sizing: inherit;
+}
+
+
+:root {
+    --primary-color: #34495e;
+    --text-color: #fff;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.figure-container {
+    fill: transparent;
+    stroke: var(--text-color);
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.figure-part {
+    display: none;
+}
